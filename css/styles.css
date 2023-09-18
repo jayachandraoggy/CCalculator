@@ -1,0 +1,110 @@
+:root {
+    --paragraph-color: #000000;
+    --border-radius: 6px;
+ }
+ 
+ * {
+    box-sizing:border-box;
+ }
+ 
+ html, body {
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+ }
+ 
+ body {
+    color: #222;
+    background: linear-gradient(180deg, #64CDDB 0%, #36ABD0 100%);
+    padding: 0.25em;
+ }
+ h2, p { margin: 0; }
+ 
+ .card {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    border-radius: var(--border-radius);
+    max-width: 400px;
+    margin: 0 auto;
+ }
+ .card header {
+    padding: 1em;
+ }
+ 
+ .card-section {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+ }
+ 
+ .card-section h2 {
+    font-weight:bold;
+    margin-bottom: 0.2em;
+ }
+ .card-section p {
+    font-weight:normal;
+    color: var(--paragrapparagraphh-color);
+ }
+ 
+ .counter-ui-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .counter {
+    font-size: 4em;
+    font-weight:bold;
+    width: 2.5em;
+    text-align:center;
+ }
+ 
+ button {
+    cursor: pointer;
+    appearance: none;
+    background: transparent;
+    border: 1px solid var(--paragraph-color);
+    height: 30px;
+    width: 30px;
+    border-radius: var(--border-radius);
+ }
+ button:focus {
+    outline: #39A7B8 auto 1px;
+ }
+
+.costs h4 {
+   font-size: 25px;
+}
+
+ .costs .totals {
+   /* color: red; */
+   font-size: 35px;
+   font-weight: bolder;
+   padding: 0.2em;
+ }
+
+ .production h4 {
+   font-size: 25px;
+ }
+
+ .production p {
+   font-size: 35px;
+   font-weight: bold;
+ }
+
+ 
+ footer {
+    /* color: #999; */
+    font-size: 25px;
+    text-align:center;
+    padding: 2em 1em 1em;
+ }
+ 
+ footer div input {
+   text-align: center;
+   font-size: 25px;
+   font-weight: bold;
+ }
+
+ footer .builtby {
+   font-size: 15px;
+ }

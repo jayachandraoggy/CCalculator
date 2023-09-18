@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructions Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type='text/javascript' src='js/lib/knockout-3.5.1.js'></script>
+</head>
+<body>
+    <div id="knockout-app" class="card">
+        <div class="card-section">
+           <!-- <h2>Hello, <span data-bind="text: userName"></span></h2> -->
+           <!-- <p>How many walks will we take today?</p> -->
+            <h3>Mason</h3>
+            <div class="counter-ui-container">
+               <button data-bind="click: decreaseMason">-</button>
+               <span class="counter" data-bind="text: masonCount">0</span>
+               <button data-bind="click: increaseMason">+</button>
+            </div>
+            <h3>Labour</h3>
+            <div class="counter-ui-container">
+               <button data-bind="click: decreaseLabour">-</button>
+               <span class="counter" data-bind="text: labourCount">0</span>
+               <button data-bind="click: increaseLabour">+</button>
+            </div>
+            <hr />
+            <div class="costs">
+               <h4>Costs:</h4> 
+               <p class="totals">Mason Cost: <span data-bind="text: masonCost"></span></p>
+               <p class="totals">Labour Cost: <span data-bind="text: labourCost"></span></p>
+               <p class="totals">Total: Rs. <span data-bind="text: totalCost"></span></p>
+            </div>
+            <div class="production">
+               <h4>Production:</h4>
+               <p><span data-bind="text: area"></span> Sq. Feet</p>
+            </div>
+        </div>
+        <footer>
+					<div>
+						<h4>Rates:</h4>
+						<div>Mason Rate: <input type="number" data-bind="value: unitMasonCost"/></div>
+						<div>Labour Rate: <input type="number" data-bind="value: unitLabourCost"/></div>
+               </div>
+               <hr />
+               <div>
+                  <p class="builtby">Built by <a href="https://jayachandraoggy.github.io/" target="_blank">Jaya Chandra</a></p>
+               </div>
+        </footer>
+     </div>
+     <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
